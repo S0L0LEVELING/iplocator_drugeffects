@@ -2,7 +2,7 @@ fx_version 'adamant'
 
 game 'gta5'
 
-description 'ESX Drug Effects'
+description 'Edited Version of ESX Drug Effects'
 
 version '0.0.5'
 
