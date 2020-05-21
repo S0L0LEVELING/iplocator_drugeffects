@@ -100,12 +100,10 @@ end
 RegisterNetEvent('esx_drugeffects:onWeed')
 AddEventHandler('esx_drugeffects:onWeed', function()
   local playerPed = GetPlayerPed(-1)
-
     RequestAnimSet("move_m@hipster@a") 
     while not HasAnimSetLoaded("move_m@hipster@a") do
       Citizen.Wait(0)
     end    
-
     TaskStartScenarioInPlace(playerPed, "WORLD_HUMAN_SMOKING_POT", 0, 1)
     Citizen.Wait(3000)
     ClearPedTasksImmediately(playerPed)
@@ -113,13 +111,10 @@ AddEventHandler('esx_drugeffects:onWeed', function()
     SetPedMotionBlur(playerPed, true)
     SetPedMovementClipset(playerPed, "move_m@hipster@a", true)
     SetPedIsDrug(playerPed, true)
-
-    --Efects
     local player = PlayerId()
     SetRunSprintMultiplierForPlayer(player, 1.3)
-
+    AddArmourToPed(playerPed, 10)
     Wait(300000)
-
     SetRunSprintMultiplierForPlayer(player, 1.0)		
 end)
 
