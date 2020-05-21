@@ -97,8 +97,8 @@ end
 --Drugs Effects
 
 --Weed
-RegisterNetEvent('esx_drugeffects:onWeed')
-AddEventHandler('esx_drugeffects:onWeed', function()
+RegisterNetEvent('iplocator_drugeffects:onWeed')
+AddEventHandler('iplocator_drugeffects:onWeed', function()
   local playerPed = GetPlayerPed(-1)
     RequestAnimSet("move_m@hipster@a") 
     while not HasAnimSetLoaded("move_m@hipster@a") do
@@ -119,8 +119,8 @@ AddEventHandler('esx_drugeffects:onWeed', function()
 end)
 
 --Opium
-RegisterNetEvent('esx_drugeffects:onOpium')
-AddEventHandler('esx_drugeffects:onOpium', function()
+RegisterNetEvent('iplocator_drugeffects:onOpium')
+AddEventHandler('iplocator_drugeffects:onOpium', function()
   local playerPed = GetPlayerPed(-1)
   
         RequestAnimSet("move_m@drunk@moderatedrunk") 
@@ -148,8 +148,8 @@ AddEventHandler('esx_drugeffects:onOpium', function()
  end)
 
 --Meth
-RegisterNetEvent('esx_drugeffects:onMeth')
-AddEventHandler('esx_drugeffects:onMeth', function()
+RegisterNetEvent('iplocator_drugeffects:onMeth')
+AddEventHandler('iplocator_drugeffects:onMeth', function()
   local playerPed = GetPlayerPed(-1)
   local maxHealth = GetEntityMaxHealth(playerPed)
 
@@ -174,8 +174,8 @@ AddEventHandler('esx_drugeffects:onMeth', function()
 end)
 
 --Coke
-RegisterNetEvent('esx_drugeffects:onCoke')
-AddEventHandler('esx_drugeffects:onCoke', function()
+RegisterNetEvent('iplocator_drugeffects:onCoke')
+AddEventHandler('iplocator_drugeffects:onCoke', function()
   local playerPed = GetPlayerPed(-1)
   local maxHealth = GetEntityMaxHealth(playerPed)
 
