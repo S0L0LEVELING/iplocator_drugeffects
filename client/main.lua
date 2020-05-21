@@ -73,7 +73,6 @@ function Normal()
 			
     ClearTimecycleModifier()
     ResetScenarioTypesEnabled()
-    --ResetPedMovementClipset(playerPed, 0) <- it might cause the push of the vehicles
     SetPedIsDrug(playerPed, false)
     SetPedMotionBlur(playerPed, false)
   end)
